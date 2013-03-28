@@ -20,9 +20,9 @@
                 onchange: "webkitfullscreenchange",
                 onerror: "webkitfullscreenerror"
             };
-        } else if (document.documentElement.mozRequestFullscreen) {
+        } else if (document.documentElement.mozRequestFullScreen) {
             return {
-                request: "mozRequestFullscreen",
+                request: "mozRequestFullScreen",
                 element: "mozFullScreenElement",
                 enabled: "mozFullSreenEnabled",
                 exit   : "mozExitFullScreen",
