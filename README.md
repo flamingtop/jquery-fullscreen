@@ -19,6 +19,13 @@ Wrap around HTML5 Fullscreen API.
     fullscreenerror // when fs encounters errors
     
     $(el).on('fullscreenenter', function(ev) { });
+    
+    // commands
+    $(el).fullscreen('enter') // same as fullscreen()
+    $(el).fullscreen('exit')
+    $(el).fullscreen('toggle')
+    $(el).fullscreen('enabled') // whether fullscreen mode is allowed
+    $(el).fullscreen('element') // returns current element being displayed in full screen
 
 ## Dependencies 
 
