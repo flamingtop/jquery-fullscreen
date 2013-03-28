@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+  <script src="http://code.jquery.com/jquery.min.js"></script>
+  <script src="jquery.fullscreen.js"></script>
+</head>
+<body>
+  <button id="fs">Go Fullscreen</button>
+  <script>
+    $('#fs')
+      .on('fullscreenenter', function(ev) { console.log('enter'); })
+      .on('fullscreenexit', function(ev) { console.log('exit'); })
+      .on('fullscreenerror', function(ev) { console.log('error'); })
+      .on('fullscreenchange', function(ev) {
+        console.log('change');
+        console.log('current fullscreen element ', $(this).fullscreen('element'));
+      })
+      .click(function() { $(this).fullscreen(); });
+  </script>
+</body>
+</html>
